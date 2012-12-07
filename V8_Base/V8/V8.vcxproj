@@ -39,8 +39,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\MyDeveloped\GitHub\v8\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\MyDeveloped\GitHub\v8\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\MyDeveloped\GitHub\Myv8\v8\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\MyDeveloped\GitHub\Myv8\v8\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -78,6 +78,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="v8.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="js.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
